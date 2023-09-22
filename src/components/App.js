@@ -9,7 +9,7 @@ const App = () => {
     fetch("https://dummyjson.com/products")
     .then((res)=>res.json())
     .then((data)=>setData(data))
-  })
+  },[])
   return (
     <div>
        <pre>{JSON.stringify(data,null,2)}</pre>
